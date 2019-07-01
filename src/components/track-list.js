@@ -96,7 +96,6 @@ class TrackList extends Component {
         </Content>
       </Layout>
 
-
       {this.state.errorMessage ? (
           <Alert message={this.state.errorMessage} type="error" />
         ) : null
