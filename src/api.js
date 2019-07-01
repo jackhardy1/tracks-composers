@@ -16,6 +16,13 @@ export default {
       })
     },
   },
+  composers: {
+    get: () => {
+      return instance.get(`composers`).then(response => {
+        return response.data
+      })
+    },
+  },
 }
 
 function makeHeaders() {

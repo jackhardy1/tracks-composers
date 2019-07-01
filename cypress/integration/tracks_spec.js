@@ -15,4 +15,10 @@ describe('Tracks should', function () {
     cy.get('.ant-card-head-title').eq(1).contains('Home In The Sun')
     cy.get('.ant-card-head-title').eq(2).contains('Shine Bright')
   })
+
+  it('have composer information', function () {
+    cy.get(':nth-child(1) > .ant-card-body').contains('Tim Garland')
+    cy.get(':nth-child(2) > .ant-card-body').contains('Tim Garland')
+    cy.get(':nth-child(3) > .ant-card-body').contains('Terry Devine King')
+  })
 })
